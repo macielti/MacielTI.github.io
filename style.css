@@ -57,7 +57,20 @@ h4{
     color: #fed766;
 
 }
+.infos {
+    display: grid;
+    justify-content: center;
+}
+h5{
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    color: #fed766;
+}
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 @media (max-width: 1002px) and (min-width:761px) {
     h1{
