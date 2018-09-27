@@ -35,11 +35,14 @@ var app = new Vue({
             }
         },
         pause: function () {
+            if (this.intervalo){
+            this.naoVaiDar();}
             clearInterval(this.intervalo);
             this.intervalo = undefined;
         },
         reset: function () {
             this.pause();
+            this.ajudaOMaluco();
             switch (this.mode) {
                 case 0:
                     this.setFocar();
@@ -60,6 +63,16 @@ var app = new Vue({
         eitaPorra: function() {
             let audio1 = new Audio();
             audio1.src = "som/eitaPorra.mp3";
+            audio1.play();
+        },
+        ajudaOMaluco: function () {
+            let audio1 = new Audio();
+            audio1.src = "som/ajudaOMaluco.mp3";
+            audio1.play();
+        },
+        naoVaiDar: function() {
+            let audio1 = new Audio();
+            audio1.src = "som/naoVaiDar.mp3";
             audio1.play();
         }
 

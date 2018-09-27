@@ -6,6 +6,14 @@
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
+
+        <style media="screen">
+            .img {
+                border-style: solid;
+                border-color: #66ffcc;
+            }
+        </style>
+
     </head>
     <body>
         <div id="app">
@@ -13,13 +21,16 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <img src="" alt="">
+                    <img class=" img rounded-circle mx-auto" height="150px;" src="imagens/bambam.png" alt="">
+                </div>
+                <div class="row">
+                    <h1 class="mx-auto">Pomodoro Birl!</h1>
                 </div>
                 <div class="row">
                     <div class="btn-group mx-auto" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-secondary" v-on:click="setFocar">Focar</button>
                         <button type="button" class="btn btn-secondary" v-on:click="setDescansar">Descansar</button>
-                        <button type="button" class="btn btn-secondary" v-on:click="setDescansoLongo">Descanso Longo</button>
+                        <button type="button" class="btn btn-secondary" v-on:click="setDescansoLongo">Descanso longo</button>
                     </div>
                 </div>
                 <br>
