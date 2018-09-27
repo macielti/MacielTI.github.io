@@ -40,7 +40,7 @@
                 </div>
                 <br>
                 <div class="row">
-                    <h1 class="mx-auto text-light" style="font-size:70px;" >{{ Math.trunc(time/60) }}:{{ time%60 }}</h1>
+                    <h1 class="mx-auto text-light" style="font-size:70px;" ><span v-show="Math.trunc(time/60) < 10">0</span>{{ Math.trunc(time/60) }}:{{ time%60 }}<span v-show="time%60 < 10">0</span></h1>
                 </div>
                 <div class="row">
                     <div class="btn-group mx-auto" role="group" aria-label="Basic example">
