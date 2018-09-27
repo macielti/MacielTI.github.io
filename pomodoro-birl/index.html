@@ -17,7 +17,7 @@
         </style>
 
     </head>
-    <body>
+    <body style="background-color: #0074D9;">
         <div id="app">
 
 
@@ -26,24 +26,24 @@
                     <img class=" img rounded-circle mx-auto" height="150px;" src="imagens/bambam.png" alt="">
                 </div>
                 <div class="row">
-                    <h1 class="mx-auto">Pomodoro Birl!</h1>
+                    <h1 class="mx-auto text-light">Pomodoro Birl!</h1>
                 </div>
                 <div class="row">
                     <div class="btn-group mx-auto" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" v-on:click="setFocar">Focar</button>
-                        <button type="button" class="btn btn-secondary" v-on:click="setDescansar">Descansar</button>
-                        <button type="button" class="btn btn-secondary" v-on:click="setDescansoLongo">Descanso longo</button>
+                        <button type="button" class="btn btn-info" v-on:click="setFocar">Focar</button>
+                        <button type="button" class="btn btn-info" v-on:click="setDescansar">Descansar</button>
+                        <button type="button" class="btn btn-info" v-on:click="setDescansoLongo">Descanso longo</button>
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <h1 class="mx-auto" style="font-size:70px;" >{{ Math.trunc(time/60) }}:{{ time%60 }}</h1>
+                    <h1 class="mx-auto text-light" style="font-size:70px;" >{{ Math.trunc(time/60) }}:{{ time%60 }}</h1>
                 </div>
                 <div class="row">
                     <div class="btn-group mx-auto" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" v-on:click="iniciar">Iniciar</button>
-                        <button type="button" class="btn btn-secondary" v-on:click="pause">Pausar</button>
-                        <button type="button" class="btn btn-secondary" v-on:click="reset">Resetar</button>
+                        <button type="button" class="btn btn-success" v-on:click="iniciar">Iniciar</button>
+                        <button type="button" class="btn btn-warning" v-on:click="pause">Pausar</button>
+                        <button type="button" class="btn btn-danger" v-on:click="reset">Resetar</button>
                     </div>
                 </div>
             </div>
