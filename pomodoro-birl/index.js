@@ -20,9 +20,11 @@ var app = new Vue({
             this.mode = 2;
         },
         decremTime: function () {
+            //responsável por decrementar tempo do pomodoro
             if(this.time <= 0){
                 this.birl();
                 clearInterval(this.intervalo);
+                this.intervalo = undefined;
             } else{
                 this.time --;
             }
