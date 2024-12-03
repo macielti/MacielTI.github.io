@@ -1,0 +1,3 @@
+[submodule "talks/clojure-graalvm-talk"]
+	path = talks/clojure-graalvm-talk
+	url = git@github.com:macielti/clojure-graalvm-talk.git
